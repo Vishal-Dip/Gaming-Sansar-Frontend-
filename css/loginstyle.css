@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+:root {
+  --red: #ce1212;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.37, 1.14, 0.26, 1.24);
+}
+
+*::selection {
+  background: orange;
+  color: #fff;
+}
+
+.btn {
+  height: 4rem;
+  width: 10rem;
+  background: var(--red);
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.btn:hover {
+  letter-spacing: 0.2rem;
+  opacity: 0.8;
+  background: #810000;
+}
+
+header .header-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .header-1 .logo {
+  font-size: 1.5rem;
+  color: #666;
+  text-decoration: none;
+}
+
+header .header-1 .logo i {
+  color: var(--red);
+}
+
+header .header-1 .form-container form {
+  display: flex;
+}
+
+header .header-1 .form-container form #search {
+  height: 3rem;
+  width: 25rem;
+  outline: none;
+  border: 0.2rem solid #666;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+header .header-1 .form-container form #search:focus {
+  border-color: var(--red);
+}
+
+header .header-1 .form-container form label {
+  height: 3rem;
+  width: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: var(--red);
+  color: #fff;
+}
+
+header .header-1 .form-container form label:hover {
+  color: #000;
+}
+
+body {
+  background: #ffc0c0;
+}
+
+.main_div {
+  height: 100vh;
+}
+
+.card {
+  border: none;
+  border-top: 5px solid #810000;
+  background: #e95454;
+  color: #fff;
+}
+
+.division {
+  width: 100%;
+  text-align: center;
+  margin: 30px auto 20px;
+}
+
+.main-heading {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.myform {
+  padding: 0 25px 0 35px;
+}
+
+.form-control {
+  border: 1px solid black;
+  border-radius: 2px;
+  background: #fff;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.form-control:focus {
+  border: 1px solid #810000;
+  border-radius: 5px;
+  background: #ffc0c0;
+  box-shadow: none;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.form-check-input {
+  width: 1rem !important;
+  width: 1rem !important;
+}
+
+.form-check-label {
+  float: left;
+}
+
+small {
+  color: #fff;
+}
+
+.reg {
+  color: #fff;
+  text-decoration: none;
+  float: right;
+}
+
+.reg2 {
+  color: #fff;
+  text-decoration: none;
+  float: left;
+}
+
+.reg:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.reg2:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .row {
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  header .header-1 .form-container form #search {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 45%;
+  }
+
+  header .header-1 {
+    flex-flow: column;
+    padding: 1rem;
+  }
+
+  header .header-1 .logo {
+    padding-bottom: 1.5rem;
+  }
+}
